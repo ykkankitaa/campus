@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "outputDirectory": "frontend",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://events-api.onrender.com/api/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://events-api.onrender.com/health"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxfordian Scholastic Society</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Material+Symbols+Outlined:wght,FILL@0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" type="button" data-view="events" aria-label="Open events">
+      <span class="seal">OSS</span>
+      <span class="brand-copy">
+        <small>THE OXFORDIAN SCHOLASTIC SOCIETY</small>
+        <strong id="page-title">Conclaves</strong>
+      </span>
+    </button>
+    <button class="profile-button" type="button" data-view="profile" aria-label="Open profile">RS</button>
+  </header>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <nav class="bottom-nav" aria-label="Primary navigation">
+    <button type="button" data-view="symposium"><span class="material-symbols-outlined">auto_stories</span><span>Symposium</span></button>
+    <button class="active" type="button" data-view="events"><span class="material-symbols-outlined">calendar_month</span><span>Events</span></button>
+    <button type="button" data-view="about"><span class="material-symbols-outlined">account_balance</span><span>About</span></button>
+    <button type="button" data-view="profile"><span class="material-symbols-outlined">person_book</span><span>Profile</span></button>
+  </nav>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
